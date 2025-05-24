@@ -3,12 +3,42 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* Common */
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-#main {
+  scroll-behavior: smooth;
 }
 
 #header {
@@ -126,7 +156,7 @@ html {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px 0;
+  padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -217,7 +247,6 @@ html {
   margin-top: 32px;
   margin-left: -8px;
   margin-right: -8px;
-  margin-bottom: 48px;
 }
 
 .places-list .place-item {
@@ -268,9 +297,6 @@ html {
 .place-buy-btn:hover {
   background-color: #ccc;
   color: #000;
-}
-
-#footer {
 }
 
 .modal {
@@ -376,4 +402,74 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.contact-content {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  outline: none;
+}
+
+.contact-form .form-submit-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  float: right;
+  cursor: pointer;
+}
+
+.contact-form .form-submit-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.map-section img {
+  width: 100%;
+}
+
+#footer {
+  padding: 64px 32px;
+  text-align: center;
+}
+
+#footer .socials-list {
+  font-size: 24px;
+}
+
+#footer .socials-list a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+#footer .socials-list a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright {
+  padding-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+  color: rgba(0, 0, 0, 0.6);
 }

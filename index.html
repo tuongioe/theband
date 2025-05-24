@@ -9,15 +9,16 @@
       rel="stylesheet"
       href="./assets/fonts/themify-icons/themify-icons.css"
     />
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8MpK55qVs-IsVrZnTSxeyk_GSemlgolKrmrGG1B6XT-0dR0WzHXJ89rLV9aMrgpvt_c&usqp=CAU">
   </head>
   <body>
     <div id="main">
       <div id="header">
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#band">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href=""
               >More
@@ -43,7 +44,7 @@
         </div>
       </div>
       <div id="content">
-        <div class="content-section">
+        <div id="band" class="content-section">
           <h2 class="section-heading">THE BAND</h2>
           <p class="section-sub-heading">We love music</p>
           <p class="about-text">
@@ -102,7 +103,7 @@
             </div>
           </div>
         </div>  
-        <div class="tour-section">
+        <div id="tour" class="tour-section">
             <div class="content-section">
               <h2 class="section-heading text-white">TOUR DATES</h2>
               <p class="section-sub-heading text-white">
@@ -157,13 +158,52 @@
             </div>
         </div>
 
-          <div class="content-section">
+        <div id="contact" class="content-section">
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-sub-heading">Fan? Drop a note!</p>
+            <div class="row contact-content">
+              <div class="col col-half contact-info">
+                  <p><i class="ti-location-pin"></i>Chicago,US</p>
+                  <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                  <p><i class="ti-email"></i>Email: mail@mail.com</p>
+              </div>  
+              <div class="col col-half contact-form">
+                  <form action="">
+                    <div class="row">
+                      <div class="col col-half">
+                        <input type="text" required name="" id="" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="col col-half">
+                        <input type="text" required name="" id="" class="form-control" placeholder="E-mail">
+                      </div>
+                    </div>
+                    <div class="row mt-8">
+                      <div class="col col-full">
+                        <input type="text" required name="" id="" class="form-control" placeholder="Message">
+                      </div>
+                    </div>
+                    <input type="submit" class="form-submit-btn mt-16" value="SEND"/>
+                  </form>
+              </div>
+            </div>
           </div>
+         
+        </div>
+        <div class="map-section">
+          <img src="https://www.w3schools.com/w3images/map.jpg" alt="Map">
         </div>
       </div>
-      <div id="footer"></div>
+      <div id="footer">
+        <div class="socials-list">
+          <a href=""><i class="ti-facebook"></i></a>
+          <a href=""><i class="ti-instagram"></i></a>
+          <a href=""><i class="ti-youtube"></i></a>
+          <a href=""><i class="ti-pinterest"></i></a>
+          <a href=""><i class="ti-twitter"></i></a>
+          <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="copyright">Powered by<a href="">TuongTruong</a></p>
+      </div>
     </div>
 
     <div class="modal js-modal">
