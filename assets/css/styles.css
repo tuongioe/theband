@@ -49,6 +49,7 @@ html {
   height: 46px;
   background-color: #000;
   z-index: 9;
+  overflow: hidden;
 }
 
 #nav {
@@ -111,15 +112,28 @@ html {
   font-size: 12px;
   font-weight: bolder;
 }
-
+#header .mobile-menu-btn,
 #header .search-btn {
   float: right;
   padding: 0 21px;
+}
+
+.mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+.mobile-menu-btn:hover .menu-icon {
+  color: black;
+}
+#header .search-btn:hover {
+  background-color: #f44336;
   cursor: pointer;
 }
 
-#header .search-btn:hover {
-  background-color: #f44336;
+#header .mobile-menu-btn .menu-icon {
+  font-size: 20px;
+  color: #fff;
+  line-height: 46px;
+  font-weight: bolder;
 }
 #header .search-icon {
   font-size: 20px;
@@ -154,9 +168,12 @@ html {
 
 #content .content-section {
   width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 64px 0 112px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #content .section-heading {

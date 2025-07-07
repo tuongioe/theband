@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       rel="stylesheet"
       href="./assets/fonts/themify-icons/themify-icons.css"
@@ -34,6 +35,7 @@
         <div class="search-btn">
           <i class="search-icon ti-search"></i>
         </div>
+        <div class="mobile-menu-btn"><i class="menu-icon ti-menu"></i></div>
       </div>
       <div id="slider">
         <div class="text-content">
@@ -263,6 +265,29 @@
       modalContainer.addEventListener('click', function(event) {
         event.stopPropagation;
       });
+
+      // Open/Close Mobile menu
+      let header = document.getElementById('header');
+      let mobileMenu = document.querySelector('.mobile-menu-btn');
+      let headerHeight = header.clientHeight;
+      mobileMenu.onclick = function() {
+        let isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+          header.style.height = 'auto';
+        } else {
+          header.style.height = null;
+        }
+      }
+      //Auto 
+      let menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (let i = 0; i < menuItems.length; i++){
+        let menuItem = menuItems[i];
+        
+        menuItem.onclick = function() {
+          header.style.height = null;
+        }
+      }
+      
     </script>
   </body>
 </html>

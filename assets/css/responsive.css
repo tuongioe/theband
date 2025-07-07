@@ -1,0 +1,26 @@
+/* Mobile */
+@media (max-width: 740px) {
+  #nav > li {
+    display: block;
+  }
+  #header .search-btn {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  #header .search-btn {
+    display: none;
+  }
+  #nav > li {
+    display: block;
+  }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
