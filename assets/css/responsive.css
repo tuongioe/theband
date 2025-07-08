@@ -3,8 +3,61 @@
   #nav > li {
     display: block;
   }
+
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+  #nav .subnav a {
+    padding: 5px 41px;
+    color: #fff;
+  }
   #header .search-btn {
     display: none;
+  }
+  #header {
+    overflow: hidden;
+  }
+  #nav {
+    display: block;
+  }
+  #content .member-item {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  #content .members-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+  }
+  #content .member-img {
+    width: 60%;
+    height: 60%;
+  }
+  .places-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .places-list .place-item {
+    width: 100%;
+    padding: 0 8px;
+    margin-top: 32px;
+  }
+  .contact-form {
+    margin-top: 16px;
+  }
+  .s-col-full {
+    width: 100%;
+  }
+  .s-mt-8 {
+    margin-top: 8px;
+  }
+  .s-full-width {
+    width: 100%;
   }
 }
 
@@ -15,6 +68,17 @@
   }
   #nav > li {
     display: block;
+  }
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+  }
+  #nav .subnav a {
+    padding: 5px 41px;
+    color: #fff;
+  }
+  #header {
+    overflow: hidden;
   }
 }
 

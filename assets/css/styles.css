@@ -49,7 +49,6 @@ html {
   height: 46px;
   background-color: #000;
   z-index: 9;
-  overflow: hidden;
 }
 
 #nav {
@@ -118,6 +117,11 @@ html {
   padding: 0 21px;
 }
 
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .mobile-menu-btn:hover {
   background-color: #ccc;
 }
