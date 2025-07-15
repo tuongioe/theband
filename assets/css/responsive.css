@@ -68,6 +68,16 @@
   #slider .text-heading {
     display: none;
   }
+  .section-heading {
+    color: pink;
+  }
+  .section-sub-heading {
+    color: pink;
+  }
+  .member-name {
+    color: pink;
+    font-size: 28px;
+  }
 }
 
 /* Tablet */
